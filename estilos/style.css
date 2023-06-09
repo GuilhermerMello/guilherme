@@ -14,11 +14,20 @@ Fontes:
     font-family: 'Passion One', cursive;
     font-family: 'Sriracha', cursive;
     
+Tamanho base:
+    1280 x 720px
     
 */
 
 :root{
     --fonte1:'Passion One', cursive;
+    --fonte2:'Sriracha', cursive;
+
+    --cor01: #18D935;
+    --cor02: #15BF2F;
+    --cor03: #2DA63F;
+    --cor04: #D9D9D9;
+    --cor05: #0D0D0D;
 }
 
 *{
@@ -39,6 +48,8 @@ header{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    font-family: "Madefor Display", "Helvetica Neue", Helvetica, Arial;
+    font-weight: bold;
 }
 
 header > img, ul, li {
@@ -49,5 +60,24 @@ header > ul > li > a{
     text-decoration: none;
     text-align: right;
     margin-left: 15px;
-    
+    color: var(--cor03);
+    text-shadow: 1px 1px 5px #d9d9d934;
+}
+
+header > ul > li > a:hover{
+    color: #15BF2F;
+}
+
+section#img01{
+    height: 720px;
+    background-image: url('../imagens/gui_720h.png');
+    background-repeat: no-repeat;
+    background-position: 90%;
+}
+
+h1.nome {
+    font-family: var(--fonte1);
+    color: #15BF2F;
+    position: center right;
+    font-size: 25px;
 }
